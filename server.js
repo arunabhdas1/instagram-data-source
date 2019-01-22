@@ -36,5 +36,5 @@ app.get('/api/feed/:id', (req, res) => {
     res.send(pics);
 });
 
-// const port = process.env.PORT || 3000;
-// app.listen(port, () => console.log(`Listening on port ${port}`));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}`));
