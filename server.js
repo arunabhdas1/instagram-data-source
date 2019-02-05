@@ -4,15 +4,8 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-const users = [
-    {userId: 'runabh', userName: 'Arunabh Das', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
-    {userId: 'runabh1', userName: 'Arunabh Das1', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
-    {userId: 'runabh2', userName: 'Arunabh Das2', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
-    {userId: 'runabh3', userName: 'Arunabh Das3', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
-    {userId: 'runabh4', userName: 'Arunabh Das4', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'}
-];
 const feed = [
-    {id: 1, userId: 'runabh', title:'accusamus beatae ad facilis cum similique qui sunt', url:'https://via.placeholder.com/600/92c952', likes:10, liked: 1},
+    {id: 1, userId: 'runabh', title:'accusamus beatae ad facilis cum similique qui sunt', url:'https://via.placeholder.com/600/92c952', likes:10, liked: 0},
     {id: 2, userId: 'runabh1', title:'reprehenderit est deserunt velit ipsam', url:'https://via.placeholder.com/600/771796', likes:10, liked: 1},
     {id: 3, userId: 'runabh2', title:'officia porro iure quia iusto qui ipsa ut modi', url:'https://via.placeholder.com/600/24f355', likes:10, liked: 1},
     {id: 4, userId: 'runabh1', title:'"culpa odio esse rerum omnis laboriosam voluptate repudiandae', url:'https://via.placeholder.com/600/d32776', likes:0, liked: 0},
@@ -27,7 +20,7 @@ const feed = [
     {id: 13, userId: 'runabh3', title:'repudiandae iusto deleniti rerum', url:'https://via.placeholder.com/600/197d29', likes:10, liked: 1},
     {id: 14, userId: 'runabh4', title:'est necessitatibus architecto ut laborum1', url:'https://via.placeholder.com/600/61a65', likes:10, liked: 1},
     {id: 15, userId: 'runabh3', title:'harum dicta similique quis dolore earum ex qui', url:'https://via.placeholder.com/600/f9cee5', likes:10, liked: 1},
-    {id: 16, userId: 'runabh2', title:'iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt', url:'https://via.placeholder.com/600/fdf73e', likes:10, liked: 10},
+    {id: 16, userId: 'runabh2', title:'iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt', url:'https://via.placeholder.com/600/fdf73e', likes:10, liked: 0},
     {id: 17, userId: 'runabh1', title:'natus doloribus necessitatibus ipsa', url:'https://via.placeholder.com/600/9c184f', likes:10, liked: 1},
     {id: 18, userId: 'runabh2', title:'laboriosam odit nam necessitatibus et illum dolores reiciendis', url:'https://via.placeholder.com/600/1fe46f', likes:10, liked: 1},
     {id: 19, userId: 'runabh4', title:'perferendis nesciunt eveniet et optio a', url:'https://via.placeholder.com/600/56acb2', likes:10, liked: 1},
