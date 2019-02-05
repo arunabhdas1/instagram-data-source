@@ -4,6 +4,13 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
+const users = [
+    {userId: 'runabh', userName: 'Arunabh Das', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
+    {userId: 'runabh1', userName: 'Arunabh Das1', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
+    {userId: 'runabh2', userName: 'Arunabh Das2', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
+    {userId: 'runabh3', userName: 'Arunabh Das3', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'},
+    {userId: 'runabh4', userName: 'Arunabh Das4', userDesc: 'Some Random Bio', userDPUrl: 'https://via.placeholder.com/600/92c952'}
+];
 const feed = [
     {id: 1, userId: 'runabh', title:'accusamus beatae ad facilis cum similique qui sunt', url:'https://via.placeholder.com/600/92c952', likes:10, liked: 0},
     {id: 2, userId: 'runabh1', title:'reprehenderit est deserunt velit ipsam', url:'https://via.placeholder.com/600/771796', likes:10, liked: 1},
